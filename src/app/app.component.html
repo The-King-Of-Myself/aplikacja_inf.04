@@ -1,19 +1,19 @@
 <form (ngSubmit)="onSubmit()">
 <h1 style="background-color: green">Rejestruj konto</h1>
-<div>
+<div class="form-group">
 <label for="email">Podaj e-mail:</label>
 <br>
-<input type="email" [(ngModel)]="email" name="email"/>
+<input type="email" class="form-control" [(ngModel)]="email" name="email"/>
 </div>
-<div>
+<div class="form-group">
 <label for="haslo">Podaj hasło:</label>
 <br>
-<input type="password" [(ngModel)]="password" name="password"/>
+<input type="password" class="form-control" [(ngModel)]="password" name="password"/>
 </div>
-<div>
+<div class="form-group">
 <label for="haslo">Powtórz hasło:</label>
 <br>
-<input type="password" [(ngModel)]="repeated_password" name="repeated_password"/>
+<input type="password" class="form-control" [(ngModel)]="repeated_password" name="repeated_password"/>
 </div>
 <input type="submit" value="ZATWIERDŹ" />
 <br>
